@@ -24,7 +24,11 @@ export const DATA = {
     "Firebase",
   ],
   navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
+    {
+      href: "/",
+      icon: HomeIcon,
+      label: "Home"
+    },
     // { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
@@ -45,7 +49,7 @@ export const DATA = {
       },
       Leetcode: {
         name: "Leetcode",
-        url: "https://leetcode.com/u/joydeep712/",
+        url: "https://leetcode.com/u/3rrors/",
         icon: Icons.leetcode,
         navbar: true
       },
@@ -54,6 +58,12 @@ export const DATA = {
         url: "https://x.com/joy_deep_19",
         icon: Icons.x,
         navbar: true,
+      },
+      Resume: {
+        name: "Resume",
+        url: "/JOYDEEP_DAS_RESUME.pdf",
+        icon: Icons.resume,
+        navbar: false
       },
       Youtube: {
         name: "Youtube",
