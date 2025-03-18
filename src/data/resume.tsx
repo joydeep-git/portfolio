@@ -3,15 +3,15 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Joydeep Das",
-  initials: "DV",
+  initials: "JD",
   url: "https://joydeep-dev.vercel.app/",
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/kolkata",
   description:
     "Full Stack Software Engineer. I love building things and helping people.",
   summary:
-    "I started as a frontend developer specializing in React and Next.js. Over time, I expanded into backend development with Node.js, Express, and MongoDB. Now, I focus on building scalable full-stack applications and SaaS projects.",
-  avatarUrl: "/me.png",
+    "I started as a frontend developer specializing in Next.js, TypeScript and Redux. Over time, I expanded into backend development with Node.js, Express, and MongoDB. Now, I focus on building scalable full-stack applications and SaaS projects.",
+  avatarUrl: "",
   skills: [
     "Next.js",
     "Typescript",
@@ -20,7 +20,8 @@ export const DATA = {
     "Tailwind CSS",
     "Node.js",
     "Express",
-    "MongoDB"
+    "MongoDB",
+    "Firebase",
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -115,64 +116,124 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
+      title: "Nestfinder",
+      href: "https://nestfinder.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "A feature-rich property listing platform with robust authentication, secure token validation, and seamless property management. Users can register, edit, and delete property listings while enjoying a smooth and interactive experience.",
       technologies: [
         "Next.js",
         "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
+        "Redux",
+        "Tanstack Query",
+        "React-hook-form",
+        "Firebase",
+        "Tailwind CSS",
         "Shadcn UI",
-        "Magic UI",
       ],
       links: [
         {
           type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
-    },
-    {
-      title: "Magic UI",
-      href: "https://magicui.design",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "Designed, developed and sold animated UI components for developers.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://magicui.design",
+          href: "https://nestfinder.vercel.app/",
           icon: <Icons.globe className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/joydeep-git/nestfinder-frontend",
+          icon: <Icons.github className="size-3" />
+        }
+      ],
+      image: "/nestfinder.png",
+      video:
+        "",
+    },
+    {
+      title: "Nestfinder Backend",
+      href: "https://github.com/joydeep-git/nestfinder-backend",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "A scalable Node.js backend built with OOP principles, featuring JWT authentication, secure cookies, and MongoDB integration for efficient data management.",
+      technologies: [
+        "Node js",
+        "Typescript",
+        "Express",
+        "JWT",
+        "Cookies",
+        "MongoDB",
+      ],
+      links: [
+        // {
+        //   type: "Website",
+        //   href: "https://magicui.design",
+        //   icon: <Icons.globe className="size-3" />,
+        // },
+        {
+          type: "GitHub",
+          href: "https://github.com/joydeep-git/nestfinder-backend",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
+      image: "/node-js.svg",
+      video: "",
+    },
+    {
+      title: "E-commerce Store",
+      href: "https://jd-elecdroid-store-react.netlify.app",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "A fully responsive e-commerce platform with user authentication, product browsing, cart management, filtering, and sorting features for a seamless shopping experience. Built with React.js, it leverages Firebase for authentication and backend services, while SCSS ensures a modern and visually appealing UI.",
+      technologies: [
+        "React js",
+        "JavaScript",
+        "SCSS",
+        "Firebase",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://jd-elecdroid-store-react.netlify.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/joydeep-git/elecdroid-store_react",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/elecdroid.png",
+      video: "",
+    },
+    {
+      title: "YouTube Clone",
+      href: "https://jd-youtube-clone-react.netlify.app",
+      dates: "June 2023 - Present",
+      active: true,
+      description:
+        "A fully functional YouTube clone with user authentication, video search, and a history page to track watched videos. Built with React.js and Tailwind CSS for a modern and responsive UI, it integrates Firebase for authentication and data storage, along with the YouTube Data API for fetching video content.",
+      technologies: [
+        "React js",
+        "JavaScript",
+        "Tailwind CSS",
+        "Firebase",
+        "Google API",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://jd-youtube-clone-react.netlify.app",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/joydeep-git/youtube-clone_react",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/youtube-clone.png",
+      video: "",
     },
   ],
   hackathons: [
