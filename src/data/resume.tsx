@@ -238,19 +238,19 @@ export const DATA = {
   ],
   hackathons: [
     // {
-    //   title: "Open Source Circular Economy Days Hackathon",
-    //   dates: "June 10th, 2017",
-    //   location: "Toronto, Ontario",
+    //   title: "Hackathon",
+    //   dates: "June 10th, 2025",
+    //   location: "Kolkata, India",
     //   description:
-    //     "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
+    //     "Developed a custom admin interface <a href='http://URL.co/'>NAME</a>.",
     //   image:
-    //     "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-    //   win: "1st Place Winner",
+    //     "URL.jpg",
+    //   win: "1st Place",
     //   links: [
     //     {
     //       title: "Source",
     //       icon: <Icons.github className="h-4 w-4" />,
-    //       href: "https://github.com/dillionverma/genecis",
+    //       href: "https://github.com/joydeep-git",
     //     },
     //   ],
     // },
