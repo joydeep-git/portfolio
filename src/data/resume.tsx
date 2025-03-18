@@ -109,7 +109,7 @@ export const DATA = {
       school: "Magra Uttam Chandra High School",
       href: "https://school.banglarshiksha.gov.in/ws/website/index/19121516601",
       degree: "Higher Secondary",
-      logoUrl: "/muchs.jpg",
+      logoUrl: "/muchs.jpeg",
       start: "2016",
       end: "2018",
     },
