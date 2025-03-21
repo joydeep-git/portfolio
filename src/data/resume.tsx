@@ -8,10 +8,10 @@ export const DATA = {
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/kolkata",
   description:
-    "Full Stack Software Engineer. I love building things and helping people.",
+    "Full Stack Developer. I love building things and helping people.",
   summary:
     "I started as a frontend developer specializing in Next.js, TypeScript and Redux. Over time, I expanded into backend development with Node.js, Express, and MongoDB. Now, I focus on building scalable full-stack applications and SaaS projects.",
-  avatarUrl: "",
+  avatarUrl: "/me.png",
   skills: [
     "Next.js",
     "Typescript",
