@@ -14,11 +14,12 @@ export const DATA = {
   avatarUrl: "/me.png",
   skills: [
     "Next.js",
-    "Typescript",
-    "Redux",
-    "TanStack Query",
-    "Tailwind CSS",
     "Node.js",
+    "Typescript",
+    "JavaScript",
+    "React.js",
+    "Redux",
+    "Tailwind CSS",
     "Express",
     "MongoDB",
     "Firebase",
@@ -61,7 +62,7 @@ export const DATA = {
       },
       Resume: {
         name: "Resume",
-        url: "/JOYDEEP_DAS_RESUME.pdf",
+        url: "/cv.pdf",
         icon: Icons.resume,
         navbar: false
       },
