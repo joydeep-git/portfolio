@@ -110,24 +110,24 @@ export const DATA = {
   education: [
     {
       school: "Burdwan University",
-      href: "https://www.buruniv.ac.in/Demo/index_bucc.php",
-      degree: "Bachelors of Science",
+      // href: "https://www.buruniv.ac.in/Demo/index_bucc.php",
+      degree: "Bachelor of Science",
       logoUrl: "/burdwanUniversity.jpeg",
       start: "2018",
       end: "2021",
     },
-    {
-      school: "Magra Uttam Chandra High School",
-      href: "https://school.banglarshiksha.gov.in/ws/website/index/19121516601",
-      degree: "Higher Secondary",
-      logoUrl: "/muchs.jpeg",
-      start: "2016",
-      end: "2018",
-    },
+    // {
+    //   school: "Magra Uttam Chandra High School",
+    //   href: "https://school.banglarshiksha.gov.in/ws/website/index/19121516601",
+    //   degree: "Higher Secondary",
+    //   logoUrl: "/muchs.jpeg",
+    //   start: "2016",
+    //   end: "2018",
+    // },
   ],
   projects: [
     {
-      title: "Nestfinder",
+      title: "Nestfinder - A Property Listing Website",
       href: "https://nestfinder.vercel.app/",
       dates: "Jan 2024 - Feb 2024",
       active: true,
@@ -160,14 +160,14 @@ export const DATA = {
         "",
     },
     {
-      title: "Nestfinder Backend",
+      title: "Nestfinder Backend API",
       href: "https://github.com/joydeep-git/nestfinder-backend",
       dates: "June 2023 - Present",
       active: true,
       description:
         "A scalable Node.js backend built with OOP principles, featuring JWT authentication, secure cookies, and MongoDB integration for efficient data management.",
       technologies: [
-        "Node js",
+        "Node.js",
         "Typescript",
         "Express",
         "JWT",
@@ -197,7 +197,7 @@ export const DATA = {
       description:
         "A fully responsive e-commerce platform with user authentication, product browsing, cart management, filtering, and sorting features for a seamless shopping experience. Built with React.js, it leverages Firebase for authentication and backend services, while SCSS ensures a modern and visually appealing UI.",
       technologies: [
-        "React js",
+        "React.js",
         "JavaScript",
         "SCSS",
         "Firebase",
@@ -225,7 +225,7 @@ export const DATA = {
       description:
         "A fully functional YouTube clone with user authentication, video search, and a history page to track watched videos. Built with React.js and Tailwind CSS for a modern and responsive UI, it integrates Firebase for authentication and data storage, along with the YouTube Data API for fetching video content.",
       technologies: [
-        "React js",
+        "React.js",
         "JavaScript",
         "Tailwind CSS",
         "Firebase",
