@@ -104,13 +104,13 @@ export const DATA = {
       start: "July 2021",
       end: "Dec 2022",
       description:
-        "Annotated Lidar, audio, image, and video data for AI/ML training with over 98% accuracy. Recognized for excellence with the 'Perfect Symphony Award'.",
+        "Annotated Lidar, audio, image, and video data for AI/ML training with over 98% accuracy. Recognised for excellence with the 'Perfect Symphony Award'.",
     },
   ],
   education: [
     {
       school: "Burdwan University",
-      // href: "https://www.buruniv.ac.in/Demo/index_bucc.php",
+      href: "",
       degree: "Bachelor of Science",
       logoUrl: "/burdwanUniversity.jpeg",
       start: "2018",
