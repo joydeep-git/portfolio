@@ -19,10 +19,11 @@ export const DATA = {
     "JavaScript",
     "React.js",
     "Redux",
+    "PostgreSQL",
     "Tailwind CSS",
-    "Express",
     "MongoDB",
     "Firebase",
+    "Express"
   ],
   navbar: [
     {
@@ -52,7 +53,7 @@ export const DATA = {
         name: "Leetcode",
         url: "https://leetcode.com/u/3rrors/",
         icon: Icons.leetcode,
-        navbar: true
+        navbar: false
       },
       X: {
         name: "X",
@@ -150,7 +151,7 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
         {
-          type: "Source",
+          type: "GitHub",
           href: "https://github.com/joydeep-git/nestfinder-frontend",
           icon: <Icons.github className="size-3" />
         }
