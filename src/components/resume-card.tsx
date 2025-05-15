@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Card, CardHeader } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
-import { ChevronRightIcon } from "lucide-react";
+import { Car, ChevronRightIcon } from "lucide-react";
 import Link from "next/link";
 import React from "react";
 
@@ -38,13 +38,12 @@ export const ResumeCard = ({
     }
   };
 
-  return (
-    <Link
-      target="_blank"
-      href={href || "#"}
-      className="block cursor-pointer"
-      onClick={handleClick}
-    >
+
+
+  // CARD CONTENTS FOR DISPLAYING ALL CARDS
+  const CardContent = () => {
+
+    return (
       <Card className="flex">
         <div className="flex-none">
           <Avatar className="border size-12 m-auto bg-muted-background dark:bg-foreground">
@@ -74,12 +73,14 @@ export const ResumeCard = ({
                     ))}
                   </span>
                 )}
-                <ChevronRightIcon
-                  className={cn(
-                    "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
-                    isExpanded ? "rotate-90" : "rotate-0"
-                  )}
-                />
+                {
+                  href && <ChevronRightIcon
+                    className={cn(
+                      "size-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100",
+                      isExpanded ? "rotate-90" : "rotate-0"
+                    )}
+                  />
+                }
               </h3>
               <div className="text-xs sm:text-sm tabular-nums text-muted-foreground text-right">
                 {period}
@@ -106,6 +107,39 @@ export const ResumeCard = ({
           )}
         </div>
       </Card>
-    </Link>
-  );
+    )
+  }
+
+
+  if (href) {
+    return (
+      <Link
+        target="_blank"
+        href={href || ""}
+        className="block cursor-pointer"
+        onClick={handleClick}
+      >
+        <CardContent />
+      </Link>
+    );
+  } else {
+    return (
+      <div
+        className="block"
+        role={description ? "button" : undefined}
+        tabIndex={description ? 0 : undefined}
+        onKeyDown={
+          description
+            ? (e: React.KeyboardEvent<HTMLDivElement>) => {
+              if (e.key === "Enter" || e.key === " ") {
+                setIsExpanded(!isExpanded);
+              }
+            }
+            : undefined
+        }
+      >
+        <CardContent />
+      </div>
+    );
+  }
 };
