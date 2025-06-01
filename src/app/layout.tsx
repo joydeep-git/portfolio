@@ -4,14 +4,19 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter as FontSans } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
-  const fontSans = Inter({
+
+
+const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+  display: "swap"
 });
+
+
 
 export const metadata: Metadata = {
   metadataBase: new URL(DATA.url),
@@ -60,6 +65,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased max-w-2xl mx-auto py-12 sm:py-24 px-6",
           fontSans.variable,
+          fontSans.className
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="light">
