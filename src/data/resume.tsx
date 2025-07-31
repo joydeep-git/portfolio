@@ -1,16 +1,16 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon, NotebookIcon } from "lucide-react";
+import { HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "Joydeep Das",
   initials: "JD",
-  url: "https://joydeep-dev.vercel.app/",
+  url: "https://joy-deep.vercel.app",
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/kolkata",
   description:
     "Full Stack Developer",
   summary:
-    "I started as a frontend developer specializing in Next.js, TypeScript and Redux. Over time, I expanded into backend development with Node.js, Express, and MongoDB. Now, I focus on building scalable full-stack applications and SaaS projects.",
+    "Full Stack developer with expertise in Node.js, Next.js, Typescript and PostgresSQL.",
   avatarUrl: "/me.png",
   skills: [
     "Next.js",
@@ -19,7 +19,7 @@ export const DATA = {
     "JavaScript",
     "React.js",
     "Redux",
-    "PostgreSQL",
+    "PostgresSQL",
     "Tailwind CSS",
     "MongoDB",
     "Firebase",
@@ -84,6 +84,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Brihat Infotech",
+      href: "https://brihatinfotech.com",
+      badges: [],
+      location: "Remote",
+      title: "Full Stack Developer Intern",
+      logoUrl: "/brihat_infotech.jpeg",
+      start: "June 2025",
+      end: "Present",
+      description:
+          "Developed Karosauda and Karosauda Admin panel. Optimized performance and manage API calls and cache.",
+    },
+    {
       company: "Digital Woods",
       href: "https://digitalwoods.io/",
       badges: [],
@@ -93,19 +105,7 @@ export const DATA = {
       start: "Feb 2024",
       end: "Dec 2024",
       description:
-        "Developed and maintained multiple sections of the company website. Contributed to the development of Digital Woods HUB. Worked on multiple projects for international clients.",
-    },
-    {
-      company: "iMerit",
-      href: "https://digitalwoods.io/",
-      badges: [],
-      location: "Remote",
-      title: "ITES Executive",
-      logoUrl: "/imerit.jpeg",
-      start: "July 2021",
-      end: "Dec 2022",
-      description:
-        "Annotated Lidar, audio, image, and video data for AI/ML training with over 98% accuracy. Recognised for excellence with the 'Perfect Symphony Award'.",
+        "Contributed to the development of Digital Woods HUB and DW Admin Panel. Worked on multiple projects for international clients and developed company website",
     },
   ],
   education: [
