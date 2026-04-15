@@ -101,13 +101,7 @@
     background-color: var(--shiki-light-bg);
   }
    
-  @media (prefers-color-scheme: dark) {
-    code[data-theme*=" "],
-    code[data-theme*=" "] span {
-      color: var(--shiki-dark);
-      background-color: var(--shiki-dark-bg);
-    }
-  }
+  /* Dark mode for code blocks intentionally removed - site is light-mode only */
   
   code[data-line-numbers] {
     counter-reset: line;

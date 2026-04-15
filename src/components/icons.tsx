@@ -1,10 +1,16 @@
 import { GlobeIcon, MailIcon } from "lucide-react";
+import Image from "next/image";
 
 export type IconProps = React.HTMLAttributes<SVGElement>;
 
 export const Icons = {
   globe: (props: IconProps) => <GlobeIcon {...props} />,
   email: (props: IconProps) => <MailIcon {...props} />,
+  resumePng: (props: React.HTMLAttributes<HTMLSpanElement>) => (
+    <span {...props} style={{ display: "inline-flex", alignItems: "center", justifyContent: "center" }}>
+      <Image src="/resume.png" alt="Resume" width={16} height={16} style={{ objectFit: "contain" }} />
+    </span>
+  ),
   linkedin: (props: IconProps) => (
     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
       <title>LinkedIn</title>
