@@ -94,9 +94,9 @@ export const DATA = {
       },
       Leetcode: {
         name: "Leetcode",
-        url: "https://leetcode.com/u/3rrors/",
+        url: "https://leetcode.com/u/ALTONIX/",
         icon: Icons.leetcode,
-        navbar: false
+        navbar: true
       },
       X: {
         name: "X",
@@ -136,7 +136,7 @@ export const DATA = {
       start: "June 2025",
       end: "Present",
       description:
-        "Developed Karosauda and Karosauda Admin panel. Optimized performance and manage API calls and cache.",
+        "Developed Karosauda and Karosauda Admin panel. Optimised performance and manage API calls and cache."
     },
     {
       company: "Digital Woods",
