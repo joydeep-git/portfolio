@@ -9,7 +9,7 @@ export const DATA = {
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/kolkata",
   description: "Full Stack Developer",
-  summary: "Full Stack developer with expertise in Node.js, Typescript, Prisma, Redis, PostgreSQL, Docker and AWS.",
+  summary: "Full Stack Developer with a backend and cloud focus — building production systems with Node.js, TypeScript, PostgreSQL, Redis, and AWS. Hands-on experience with AI integrations(AWS Bedrock, Google Gemini) and end-to-end security architecture. Proven ability to deliver and deploy real-world applications independently. Open to backend, full-stack, or cloud-adjacent roles.",
   avatarUrl: "/me.png",
 
   skillCategories: [
