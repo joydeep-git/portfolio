@@ -19,16 +19,19 @@ export const DATA = {
         { icon: "/nodejs.png", title: "Node.js" },
         { icon: "/typescript.png", title: "TypeScript" },
         { icon: "/prisma.png", title: "Prisma ORM" },
-        { icon: "/redis.png", title: "Redis" },
+        // { icon: "/redis.png", title: "Redis" },
         { icon: "/docker.png", title: "Docker" },
         { icon: "/express.png", title: "Express.js" },
         { icon: "/jwt.png", title: "JWT" },
+        { icon: "/nodemailer.png", title: "Nodemailer" },
       ],
     },
     {
       category: "Database",
       skills: [
         { icon: "/postgresql.png", title: "PostgreSQL" },
+        { icon: "/mysql.png", title: "MySQL" },
+        { icon: "/redis.png", title: "Redis" },
         { icon: "/mongodb.png", title: "MongoDB" },
       ],
     },
@@ -134,7 +137,7 @@ export const DATA = {
       title: "Full Stack Developer Intern",
       logoUrl: "/brihat_infotech.jpeg",
       start: "June 2025",
-      end: "Present",
+      end: "August 2025",
       description:
         "Developed Karosauda and Karosauda Admin panel. Optimised performance and manage API calls and cache."
     },
