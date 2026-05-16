@@ -1,6 +1,5 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
-import Image from "next/image";
 
 export const DATA = {
   name: "Joydeep Das",
@@ -9,7 +8,7 @@ export const DATA = {
   location: "Kolkata, WB",
   locationLink: "https://www.google.com/maps/place/kolkata",
   description: "Full Stack Developer",
-  summary: "Full Stack Developer with a backend and cloud focus — building production systems with Node.js, TypeScript, PostgreSQL, Redis, and AWS. Hands-on experience with AI integrations(AWS Bedrock, Google Gemini) and end-to-end security architecture. Proven ability to deliver and deploy real-world applications independently. Open to backend, full-stack, or cloud-adjacent roles.",
+  summary: "Full Stack Developer with a backend, Artificial Intelligence and cloud focus — building production systems with Node.js, TypeScript, PostgreSQL, Redis, and AWS. Hands-on experience with AI integrations(AWS Bedrock, Google Gemini) and end-to-end security architecture. Proven ability to deliver and deploy real-world applications independently. Open to backend or full-stack roles.",
   avatarUrl: "/me.png",
 
   skillCategories: [
@@ -19,11 +18,28 @@ export const DATA = {
         { icon: "/nodejs.png", title: "Node.js" },
         { icon: "/typescript.png", title: "TypeScript" },
         { icon: "/prisma.png", title: "Prisma ORM" },
-        // { icon: "/redis.png", title: "Redis" },
-        { icon: "/docker.png", title: "Docker" },
         { icon: "/express.png", title: "Express.js" },
-        { icon: "/jwt.png", title: "JWT" },
         { icon: "/nodemailer.png", title: "Nodemailer" },
+      ],
+    },
+    {
+      category: "Cloud & DevOps",
+      skills: [
+        { icon: "/aws.png", title: "AWS" },
+        { icon: "/docker.png", title: "Docker" },
+        { icon: "/render.jpeg", title: "Render" },
+      ],
+    },
+    {
+      category: "Security",
+      skills: [
+        { icon: "/jwt.png", title: "JWT" },
+        { icon: "", title: "Argon2", lucideIcon: "ShieldCheck" },
+        { icon: "", title: "Helmet.js", lucideIcon: "Shield" },
+        { icon: "", title: "Rate Limiting", lucideIcon: "Gauge" },
+        { icon: "", title: "CORS", lucideIcon: "Globe" },
+        { icon: "", title: "OTP Validation", lucideIcon: "KeyRound" },
+        { icon: "", title: "DDOS Protection", lucideIcon: "ShieldAlert" },
       ],
     },
     {
@@ -36,12 +52,18 @@ export const DATA = {
       ],
     },
     {
-      category: "Integrations & Cloud",
+      category: "AI & LLM Integrations",
       skills: [
-        { icon: "/aws.png", title: "AWS" },
+        { icon: "/claude.png", title: "Claude AI" },
+        { icon: "/bedrock.png", title: "AWS Bedrock" },
         { icon: "/gemini.png", title: "Gemini AI" },
-        { icon: "/cashfree.png", title: "Cashfree payments" },
       ],
+    },
+    {
+      category: "Payment Gateway",
+      skills: [
+        { icon: "/cashfree.png", title: "Cashfree payments" },
+      ]
     },
     {
       category: "Frontend",
@@ -50,6 +72,8 @@ export const DATA = {
         { icon: "/redux.png", title: "Redux" },
         { icon: "/tailwind.png", title: "Tailwind CSS" },
         { icon: "/framer.png", title: "Framer Motion" },
+        { icon: "/tanstack.png", title: "Tanstack Query" },
+        { icon: "/formik.png", title: "Formik" },
       ],
     },
   ],
@@ -171,7 +195,7 @@ export const DATA = {
       dates: "2026",
       active: true,
       description:
-        "A full-stack real-time AI based news platform. Features include category-wise browsing (Tech, Business, Sports, Politics), article search, single article view, and a responsive card-based UI. Built with Next.js and powered by a Node.js backend with PostgreSQL for data persistence and Redis for caching news feeds.",
+        "A live AI-powered news platform built alone, end to end. Redis-first caching cuts API calls by 80%+. AWS Bedrock for AI summarisation, Polly for TTS audio, Cashfree payments, JWT auth with token blacklisting — deployed via Docker on AWS EC2 behind CloudFront.",
       technologies: [
         "Node.js",
         "TypeScript",
@@ -201,6 +225,11 @@ export const DATA = {
           type: "Frontend",
           href: "https://github.com/joydeep-git/newsglance-web",
           icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Postman Collection",
+          href: "https://newsglance.apidog.io",
+          icon: <Icons.postman className="size-3" />,
         },
       ],
       image: "/newsglance.png",
@@ -246,35 +275,6 @@ export const DATA = {
       image: "/nestfinder.png",
       video:
         "",
-    },
-    {
-      title: "YouTube Clone",
-      href: "https://jd-youtube-clone-react.netlify.app",
-      dates: "June 2023 - Present",
-      active: true,
-      description:
-        "A fully functional YouTube clone with user authentication, video search, and a history page to track watched videos. Built with React.js and Tailwind CSS for a modern and responsive UI, it integrates Firebase for authentication and data storage, along with the YouTube Data API for fetching video content.",
-      technologies: [
-        "React.js",
-        "JavaScript",
-        "Tailwind CSS",
-        "Firebase",
-        "Google API",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://jd-youtube-clone-react.netlify.app",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/joydeep-git/youtube-clone_react",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/youtube-clone.png",
-      video: "",
     },
   ],
 } as const;

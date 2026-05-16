@@ -2,11 +2,31 @@
 
 import BlurFade from "@/components/magicui/blur-fade";
 import { Badge } from "@/components/ui/badge";
+import {
+  ShieldCheck,
+  Shield,
+  Gauge,
+  Globe,
+  KeyRound,
+  ShieldAlert,
+  LucideIcon,
+} from "lucide-react";
 import Image from "next/image";
+
+// Map of lucide icon name -> component
+const LucideIconMap: Record<string, LucideIcon> = {
+  ShieldCheck,
+  Shield,
+  Gauge,
+  Globe,
+  KeyRound,
+  ShieldAlert,
+};
 
 interface Skill {
   readonly icon: string;
   readonly title: string;
+  readonly lucideIcon?: string;
 }
 
 interface SkillCategory {
@@ -20,10 +40,13 @@ interface SkillsSectionProps {
 }
 
 const categoryIcons: Record<string, string> = {
-  Backend: "⚙️",
-  Frontend: "🎨",
-  Database: "🗄️",
-  "Integrations & Cloud": "☁️",
+  "Backend": "🛠️",
+  "Cloud & DevOps": "☁️",
+  "Security": "🔐",
+  "Frontend": "🎨",
+  "Database": "🗄️",
+  "AI & LLM Integrations": "🤖",
+  "Payment Gateway": "💳",
 };
 
 export function SkillsSection({ skillCategories, blurFadeDelay }: SkillsSectionProps) {
@@ -47,29 +70,42 @@ export function SkillsSection({ skillCategories, blurFadeDelay }: SkillsSectionP
               </div>
 
               {/* Skills row */}
-              <div className="flex flex-wrap gap-1.5">
-                {category.skills.map((skill, skillIdx) => (
-                  <BlurFade
-                    key={`${category.category}-${skill.title}`}
-                    delay={blurFadeDelay + catIdx * 0.08 + skillIdx * 0.03}
-                  >
-                    <Badge
-                      className="flex items-center gap-1.5 px-2.5 py-1 text-sm font-medium hover:bg-secondary/80 transition-colors"
-                      variant="secondary"
+              <div className="flex flex-wrap gap-2">
+                {category.skills.map((skill, skillIdx) => {
+                  const LucideComp = skill.lucideIcon ? LucideIconMap[skill.lucideIcon] : null;
+
+                  return (
+                    <BlurFade
+                      key={`${category.category}-${skill.title}`}
+                      delay={blurFadeDelay + catIdx * 0.08 + skillIdx * 0.03}
                     >
-                      <div className="size-4 relative flex-shrink-0">
-                        <Image
-                          fill
-                          src={skill.icon}
-                          alt={skill.title}
-                          className="object-contain"
-                          sizes="16px"
-                        />
-                      </div>
-                      <span>{skill.title}</span>
-                    </Badge>
-                  </BlurFade>
-                ))}
+                      <Badge
+                        className="flex items-center gap-2 px-3 py-1.5 text-[13px] font-medium hover:bg-secondary/80 transition-colors"
+                        variant="secondary"
+                      >
+                        {/* Show lucide icon if specified */}
+                        {LucideComp && (
+                          <LucideComp className="size-[17px] flex-shrink-0" />
+                        )}
+
+                        {/* Show PNG icon only if icon path is non-empty */}
+                        {!LucideComp && skill.icon && (
+                          <div className="size-[17px] relative flex-shrink-0">
+                            <Image
+                              fill
+                              src={skill.icon}
+                              alt={skill.title}
+                              className="object-contain"
+                              sizes="17px"
+                            />
+                          </div>
+                        )}
+
+                        <span>{skill.title}</span>
+                      </Badge>
+                    </BlurFade>
+                  );
+                })}
               </div>
             </div>
           </BlurFade>

@@ -9,19 +9,14 @@ import { DATA } from "@/data/resume";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 
-
-
 export default function Navbar() {
-
-
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 mx-auto mb-4 flex origin-bottom h-full max-h-14">
-
-
-      <Dock className="z-50 pointer-events-auto gap-4 relative mx-auto flex min-h-full h-full items-center px-4 bg-background [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]">
-
-        {
-          DATA.navbar.map((item) => (
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex items-end justify-center pb-4">
+      {/* Scrollable container for very small screens */}
+      <div className="pointer-events-auto w-full max-w-[calc(100vw-2rem)] overflow-x-auto scrollbar-none flex justify-center">
+        <Dock className="z-50 flex min-h-full h-full items-center gap-1 px-3 bg-background border border-border/60 rounded-2xl shadow-[0_4px_24px_rgba(0,0,0,0.10),0_0_0_1px_rgba(0,0,0,0.05)] whitespace-nowrap">
+          {/* Nav pages */}
+          {DATA.navbar.map((item) => (
             <DockIcon key={item.href}>
               <Tooltip>
                 <TooltipTrigger asChild>
@@ -29,23 +24,24 @@ export default function Navbar() {
                     href={item.href}
                     className={cn(
                       buttonVariants({ variant: "ghost", size: "icon" }),
-                      "size-12"
+                      "size-10 sm:size-11"
                     )}
                   >
                     <item.icon className="size-4" />
                   </Link>
                 </TooltipTrigger>
-                <TooltipContent>
+                <TooltipContent side="top">
                   <p>{item.label}</p>
                 </TooltipContent>
               </Tooltip>
             </DockIcon>
           ))}
 
+          {/* Separator */}
+          <div className="h-6 w-px bg-border mx-1 flex-shrink-0" />
 
-
-        {
-          Object.entries(DATA.contact.social)
+          {/* Social links */}
+          {Object.entries(DATA.contact.social)
             .filter(([_, social]) => social.navbar)
             .map(([name, social]) => (
               <DockIcon key={name}>
@@ -54,25 +50,23 @@ export default function Navbar() {
                     <Link
                       target="_blank"
                       href={social.url}
+                      aria-label={name}
                       className={cn(
                         buttonVariants({ variant: "ghost", size: "icon" }),
-                        "size-12 flex items-center justify-center"
+                        "size-10 sm:size-11 flex items-center justify-center"
                       )}
                     >
-                      {/* Render icon — works for both SVG icons and PNG-based icons */}
                       <social.icon className="size-4" />
                     </Link>
                   </TooltipTrigger>
-                  <TooltipContent>
+                  <TooltipContent side="top">
                     <p>{name}</p>
                   </TooltipContent>
                 </Tooltip>
               </DockIcon>
-            ))
-        }
-
-
-      </Dock>
+            ))}
+        </Dock>
+      </div>
     </div>
   );
 }
