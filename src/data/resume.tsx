@@ -155,7 +155,7 @@ export const DATA = {
   work: [
     {
       company: "Brihat Infotech",
-      href: "https://brihatinfotech.com",
+      href: "",
       badges: [],
       location: "Remote",
       title: "Full Stack Developer Intern",
@@ -166,16 +166,16 @@ export const DATA = {
         "Developed Karosauda and Karosauda Admin panel. Optimised performance and manage API calls and cache."
     },
     {
-      company: "Digital Woods",
-      href: "https://digitalwoods.io/",
+      company: "Cybergrove Solutions",
+      href: "",
       badges: [],
       location: "Siliguri",
-      title: "Front-end Developer",
-      logoUrl: "/digitalwoods.jpg",
+      title: "Software Developer",
+      logoUrl: "",
       start: "Feb 2024",
       end: "Dec 2024",
       description:
-        "Contributed to the development of Digital Woods HUB and DW Admin Panel. Worked on multiple projects for international clients and developed company website",
+        "Contributed to the development of Digital Woods HUB and DW Admin Panel. Developed internal application using Node.js and HubSpot CMS Api.",
     },
   ],
   education: [
