@@ -57,6 +57,7 @@ function getLinkStyle(type: string) {
   const t = type.toLowerCase();
   if (t === "website") return "bg-foreground text-background hover:bg-foreground/85";
   if (t.includes("postman")) return "bg-[#FF6C37] text-white hover:bg-[#e55d2a]";
+  if (t === "video demo") return "bg-[#625DF5] text-white hover:bg-[#5250d4]";
   if (t === "video") return "bg-red-500 text-white hover:bg-red-600";
   if (t === "backend") return "bg-slate-800 text-white hover:bg-slate-700";
   if (t === "frontend") return "bg-slate-600 text-white hover:bg-slate-500";

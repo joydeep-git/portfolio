@@ -172,10 +172,20 @@ export const DATA = {
       location: "Siliguri",
       title: "Software Developer",
       logoUrl: "",
-      start: "Feb 2024",
-      end: "Dec 2024",
-      description:
-        "Contributed to the development of Digital Woods HUB and DW Admin Panel. Developed internal application using Node.js and HubSpot CMS Api.",
+      start: "February 2024",
+      end: "December 2024",
+      description: "Contributed to the development of Digital Woods HUB and DW Admin Panel. Developed internal application using Node.js and HubSpot CMS Api.",
+    },
+    {
+      company: "iMerit Technology Services",
+      href: "",
+      badges: [],
+      location: "Kolkata",
+      title: "ITES Executive",
+      logoUrl: "/imerit.png",
+      start: "July 2021",
+      end: "December 2022",
+      description:"",
     },
   ],
   education: [
@@ -215,6 +225,11 @@ export const DATA = {
           type: "Website",
           href: "https://newsglance.vercel.app",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Video Demo",
+          href: "https://www.loom.com/share/2e0b390aaa1349018f3175eca94f9450",
+          icon: <Icons.loom className="size-3" />,
         },
         {
           type: "Backend",
