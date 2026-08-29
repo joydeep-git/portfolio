@@ -158,10 +158,10 @@ export const DATA = {
       href: "",
       badges: [],
       location: "Remote",
-      title: "Full Stack Developer Intern",
+      title: "Full Stack Developer",
       logoUrl: "/brihat_infotech.jpeg",
       start: "June 2025",
-      end: "August 2025",
+      end: "December 2025",
       description:
         "Developed Karosauda and Karosauda Admin panel. Optimised performance and manage API calls and cache."
     },
